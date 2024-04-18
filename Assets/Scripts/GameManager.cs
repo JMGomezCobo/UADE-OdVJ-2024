@@ -7,8 +7,10 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    [SerializeField] GameObject defeatScreen;
-    [SerializeField] GameObject victoryScreen;
+
+//esto no es necesario
+    //[SerializeField] GameObject defeatScreen;
+    //[SerializeField] GameObject victoryScreen;
     Ball ball;
     public int lives;
 
@@ -16,28 +18,32 @@ public class GameManager : MonoBehaviour
     {
         ball = Ball.Instance;
     }
+
     public void Awake()
     {
         if (Instance == null) Instance = this;
-        //else Destroy(gameObject);
+        else Destroy(gameObject);
     }
 
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape)) Exit();
         if (Input.GetKeyUp(KeyCode.R)) ResetGame();
+
+        //acá dejo un print que me contaba los ladrillos
+        //print(transform.childCount);
     }
 
     public void LoseHealth()
     {
         lives -= 1;
-        print(lives);
-        if (lives <= 0) LoadGameOverScreen();
+        if (lives <= 0) LoadGameOverScreen(); //acá hice que esto llame a un método privado
         else ResetLevel();
     }
 
     private void LoadGameOverScreen()
     {
+        //esta es la carga de la game over screen
         SceneManager.LoadScene(2);
     }
 
@@ -46,13 +52,15 @@ public class GameManager : MonoBehaviour
         ball.ResetBall();
         FindObjectOfType<Player>().ResetPlayer();
     }
+
     public void ResetGame()
     {
-        victoryScreen.SetActive(false);
-        defeatScreen.SetActive(false);
+        //victoryScreen.SetActive(false);
+        //defeatScreen.SetActive(false);
         lives += 3;
         ActivateAllChildren();
     }
+
     public void ActivateAllChildren()
     {
         foreach (Transform child in transform)
@@ -61,20 +69,28 @@ public class GameManager : MonoBehaviour
 
     public void CheckLevelCompleted()
     {
-        if (transform.childCount <= 1) LoadVictoryScreen();
+        if (transform.childCount <= 1)
+        {
+            LoadVictoryScreen();
+        }
     }
 
-    public void DefeatScreen()
-    {
-        if (defeatScreen == null) return;
-        defeatScreen.SetActive(true);
-    }
+    //public void DefeatScreen()
+    //{
+    //    if (defeatScreen == null) return;
+    //    defeatScreen.SetActive(true);
+    //}
 
     public void LoadVictoryScreen()
     {
         Time.timeScale = 0f;
+        
+        //accá esto lo comento porque lo manejamos de otra forma
+
         //if (victoryScreen == null) return;
         //victoryScreen.SetActive(true);
+
+
         SceneManager.LoadScene(1);
     }
 

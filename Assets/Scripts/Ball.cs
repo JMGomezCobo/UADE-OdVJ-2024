@@ -47,6 +47,10 @@ public class Ball : MonoBehaviour
         {
             Vector3 normal = collision.contacts[0].normal;
             velocity = Vector3.Reflect(velocity, normal);
+            
+            //el que debería chequear la condición es la pelota
+            //así que acá hago que destruya al ladrillo
+            Destroy(collision.gameObject);
         }
 
         else
