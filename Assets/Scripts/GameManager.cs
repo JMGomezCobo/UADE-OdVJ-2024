@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-//esto no es necesario
+    //esto no es necesario
     //[SerializeField] GameObject defeatScreen;
     //[SerializeField] GameObject victoryScreen;
     Ball ball;
@@ -55,10 +55,9 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame()
     {
-        //victoryScreen.SetActive(false);
-        //defeatScreen.SetActive(false);
-        lives += 3;
-        ActivateAllChildren();
+        //esto también lo cambié para que los botones
+        //de las defeat y victory scenes funcionen bien
+        SceneManager.LoadScene(0);
     }
 
     public void ActivateAllChildren()
@@ -84,12 +83,11 @@ public class GameManager : MonoBehaviour
     public void LoadVictoryScreen()
     {
         Time.timeScale = 0f;
-        
+
         //accá esto lo comento porque lo manejamos de otra forma
 
         //if (victoryScreen == null) return;
         //victoryScreen.SetActive(true);
-
 
         SceneManager.LoadScene(1);
     }
@@ -98,5 +96,4 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
-    
 }
