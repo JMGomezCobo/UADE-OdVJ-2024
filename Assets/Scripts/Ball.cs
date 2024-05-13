@@ -15,40 +15,51 @@ public class Ball : MonoBehaviour
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
+
     void Start()
     {
         gameManager = GameManager.Instance;
         startPosition = transform.position;
         ResetBall();
     }
+
     void Update()
     {
         if (gameManager.lives > 0) transform.position += velocity * Time.deltaTime;
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("DeadZone")) 
-        { 
+        {
             gameManager.LoseHealth();
             ResetBall();
         }
+        
         else if (collision.gameObject.CompareTag("Player"))
         {
             float hitFactor = (transform.position.x - collision.transform.position.x) / collision.collider.bounds.size.x;
             Vector3 direction = new Vector3(hitFactor, 1, 0).normalized;
             velocity = direction * speed;
         }
+
         else if (collision.gameObject.CompareTag("Brick"))
         {
             Vector3 normal = collision.contacts[0].normal;
             velocity = Vector3.Reflect(velocity, normal);
+            
+            //el que debería chequear la condición es la pelota
+            //así que acá hago que destruya al ladrillo
+            Destroy(collision.gameObject);
         }
+
         else
         {
             Vector3 normal = collision.contacts[0].normal;
             velocity = Vector3.Reflect(velocity, normal);
         }
     }
+
     public void ResetBall()
     {
         transform.position = startPosition;
