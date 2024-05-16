@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 
 public class GameManager : MonoBehaviour
@@ -12,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject victoryScreen;
     Ball ball;
     public int lives = 3;
+    public TMP_Text livesText;
 
     private void Start()
     {
@@ -28,7 +30,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Escape)) LoadMainMenu();
         if (Input.GetKeyUp(KeyCode.R)) ResetGame();
         CheckLevelCompleted();
-
+        UpdateLivesUI();
     }
     public void LoseHealth()
     {
@@ -88,6 +90,10 @@ public class GameManager : MonoBehaviour
     public void LoadMainMenu()
     {
         SceneManager.LoadScene(0);
+    }
+    void UpdateLivesUI()
+    {
+        if (livesText != null) livesText.text = "Vidas: " + lives.ToString();
     }
     
 }

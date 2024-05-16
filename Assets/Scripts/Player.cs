@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public float maxSpeed = 25f;
     public float maxXPosition = 10f;
     private Vector3 startPosition;
-    public GameObject ballPrefab;
+    [SerializeField] GameObject ballPrefab;
     private void Start()
     {
         startPosition = transform.position;
@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     {
         float inputHorizontal = Input.GetAxisRaw("Horizontal");
         MovePlayer(inputHorizontal);
+        Instantiate(ballPrefab, transform.position, Quaternion.identity);
     }
     public void ResetPlayer()
     {
@@ -33,9 +34,11 @@ public class Player : MonoBehaviour
     public void SpawnMultipleBalls(int numBalls)
     {
         for (int i = 0; i < numBalls; i++)
-        {
             Instantiate(ballPrefab, transform.position, Quaternion.identity);
-        }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("PowerUp")) Instantiate(ballPrefab, transform.position, transform.rotation);
+    }
 }

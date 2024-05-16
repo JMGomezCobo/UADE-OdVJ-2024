@@ -9,7 +9,6 @@ public class MultiballPowerUp : MonoBehaviour
         if (other.CompareTag("Player")) 
         {
             Player player = other.GetComponent<Player>();
-            if (player != null && player.ballPrefab != null) player.SpawnMultipleBalls(2);
             Destroy(gameObject);
         }
     }

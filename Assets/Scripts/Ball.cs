@@ -32,11 +32,7 @@ public class Ball : MonoBehaviour
             LaunchBall();
             readyToLaunch = false;
         }
-        if (!readyToLaunch) 
-        {
-            //startPosition = new Vector3(FindObjectOfType<Player>().transform.position.x, FindObjectOfType<Player>().transform.position.y + 0.5f, 0);
-            transform.position += velocity * Time.deltaTime;
-        }
+        if (!readyToLaunch) transform.position += velocity * Time.deltaTime;
     }
     private void OnCollisionEnter(Collision collision)
     {
