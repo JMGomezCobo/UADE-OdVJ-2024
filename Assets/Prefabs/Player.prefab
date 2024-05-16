@@ -149,3 +149,4 @@ MonoBehaviour:
   moveSpeed: 25
   maxSpeed: 25
   maxXPosition: 7.2
+  ballPrefab: {fileID: 3338930691391246307, guid: bb8c467b7b098fe4db5d493b6236fd07, type: 3}

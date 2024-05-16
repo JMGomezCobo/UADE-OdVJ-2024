@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public float maxSpeed = 25f;
     public float maxXPosition = 10f;
     private Vector3 startPosition;
-
+    public GameObject ballPrefab;
     private void Start()
     {
         startPosition = transform.position;
@@ -29,6 +29,13 @@ public class Player : MonoBehaviour
         float movementX = inputHorizontal * moveSpeed * Time.deltaTime;
         float newXPosition = Mathf.Clamp(transform.position.x + movementX, - maxXPosition, maxXPosition);
         transform.position = new Vector3(newXPosition, transform.position.y, transform.position.z);
+    }
+    public void SpawnMultipleBalls(int numBalls)
+    {
+        for (int i = 0; i < numBalls; i++)
+        {
+            Instantiate(ballPrefab, transform.position, Quaternion.identity);
+        }
     }
 
 }

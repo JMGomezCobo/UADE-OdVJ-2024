@@ -6,9 +6,11 @@ public class Ball : MonoBehaviour
 {
     public float speed = 3;
     private Vector3 velocity;
+    private Transform playerTransform;
     Vector3 startPosition;
     GameManager gameManager;
     public static Ball Instance;
+    private bool readyToLaunch = true;
 
     public void Awake()
     {
@@ -18,12 +20,23 @@ public class Ball : MonoBehaviour
     void Start()
     {
         gameManager = GameManager.Instance;
-        startPosition = transform.position;
+        //startPosition = new Vector3(FindObjectOfType<Player>().transform.position.x, FindObjectOfType<Player>().transform.position.y + 0.5f, 0);
+        playerTransform = FindObjectOfType<Player>().transform;
         ResetBall();
     }
     void Update()
     {
-        if (gameManager.lives > 0) transform.position += velocity * Time.deltaTime;
+        if (readyToLaunch) transform.position = new Vector3(playerTransform.position.x, playerTransform.position.y + 0.5f, 0);
+        if (Input.GetKeyDown(KeyCode.Space) && readyToLaunch)
+        {
+            LaunchBall();
+            readyToLaunch = false;
+        }
+        if (!readyToLaunch) 
+        {
+            //startPosition = new Vector3(FindObjectOfType<Player>().transform.position.x, FindObjectOfType<Player>().transform.position.y + 0.5f, 0);
+            transform.position += velocity * Time.deltaTime;
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -31,6 +44,7 @@ public class Ball : MonoBehaviour
         { 
             gameManager.LoseHealth();
             ResetBall();
+            readyToLaunch=true;
         }
         else if (collision.gameObject.CompareTag("Player"))
         {
@@ -51,7 +65,21 @@ public class Ball : MonoBehaviour
     }
     public void ResetBall()
     {
-        transform.position = startPosition;
-        velocity = new Vector3(Random.Range(-1.1f,1.1f),1,0).normalized * speed;
+        transform.position = new Vector3(FindObjectOfType<Player>().transform.position.x, FindObjectOfType<Player>().transform.position.y + 0.5f, 0);
+        velocity = Vector3.zero;
+    }
+    public void LaunchBall()
+    {
+           velocity = new Vector3(Random.Range(-1, 1f), 1, 0).normalized * speed;
+    }
+    public void LaunchMultipleBalls(int count)
+    {
+        for (int i = 0; i < count; i++)
+        {
+            Vector3 offset = new Vector3(Random.Range(-0.5f, 0.5f), 0, 0); //Ajuste de rango según sea necesario
+            Vector3 newPosition = FindObjectOfType<Player>().transform.position + offset;
+            GameObject newBall = Instantiate(gameObject, newPosition, Quaternion.identity);
+            newBall.GetComponent<Ball>().LaunchBall();
+        }
     }
 }
