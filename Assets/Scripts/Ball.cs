@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ball : MonoBehaviour
+public class Ball : ManagedUpdateBehaviour
 {
     public float speed = 3;
     private Vector3 velocity;
@@ -24,7 +24,7 @@ public class Ball : MonoBehaviour
         playerTransform = FindObjectOfType<Player>().transform;
         ResetBall();
     }
-    void Update()
+    public override void UpdateMe()
     {
         if (readyToLaunch) transform.position = new Vector3(playerTransform.position.x, playerTransform.position.y + 0.5f, 0);
         if (Input.GetKeyDown(KeyCode.Space) && readyToLaunch)

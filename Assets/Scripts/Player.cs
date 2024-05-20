@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : ManagedUpdateBehaviour
 {
     private float inputValue;
     public float moveSpeed = 25f;
@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
         startPosition = transform.position;
     }
 
-    void Update()
+    public override void UpdateMe()
     {
         float inputHorizontal = Input.GetAxisRaw("Horizontal");
         MovePlayer(inputHorizontal);

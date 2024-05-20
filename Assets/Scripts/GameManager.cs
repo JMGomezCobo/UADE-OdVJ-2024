@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 
 
-public class GameManager : MonoBehaviour
+public class GameManager : ManagedUpdateBehaviour
 {
     public static GameManager Instance;
     [SerializeField] GameObject defeatScreen;
@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
-    private void Update()
+    public override void UpdateMe()
     {
         if (Input.GetKeyUp(KeyCode.Escape)) LoadMainMenu();
         if (Input.GetKeyUp(KeyCode.R)) ResetGame();
