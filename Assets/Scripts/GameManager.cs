@@ -50,7 +50,10 @@ public class GameManager : ManagedUpdateBehaviour
         lives += 3;
         ActivateAllChildren();
         ResetLevel();
+        ball.ResetBall();
         Time.timeScale = 1f;
+        if (lives > 3) lives = 3;
+
     }
     public void ActivateAllChildren()
     {

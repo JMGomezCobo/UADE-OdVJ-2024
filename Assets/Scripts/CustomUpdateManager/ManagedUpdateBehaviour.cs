@@ -4,7 +4,8 @@ public class ManagedUpdateBehaviour : MonoBehaviour
 {
     protected virtual void OnEnable()
     {
-        UpdateManager.Instance.AddToUpdateList(this);
+        if (UpdateManager.Instance != null) UpdateManager.Instance.AddToUpdateList(this);
+        else Debug.LogError("UpdateManager instance es nulo");
     }
     protected virtual void OnDisable()
     {
