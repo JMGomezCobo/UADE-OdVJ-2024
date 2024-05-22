@@ -11,6 +11,6 @@ public class MultiballPowerUp : MonoBehaviour
             Player player = other.GetComponent<Player>();
             Destroy(gameObject);
         }
+        if (other.CompareTag("DeadZone")) Destroy(gameObject);
     }
-  
 }

@@ -19,7 +19,6 @@ public class Player : ManagedUpdateBehaviour
     {
         float inputHorizontal = Input.GetAxisRaw("Horizontal");
         MovePlayer(inputHorizontal);
-        Instantiate(ballPrefab, transform.position, Quaternion.identity);
     }
     public void ResetPlayer()
     {
@@ -31,14 +30,17 @@ public class Player : ManagedUpdateBehaviour
         float newXPosition = Mathf.Clamp(transform.position.x + movementX, - maxXPosition, maxXPosition);
         transform.position = new Vector3(newXPosition, transform.position.y, transform.position.z);
     }
-    public void SpawnMultipleBalls(int numBalls)
+    public void LaunchMultipleBallsFromPlayer(int count)
     {
-        for (int i = 0; i < numBalls; i++)
-            Instantiate(ballPrefab, transform.position, Quaternion.identity);
+        for (int i = 0; i < count; i++)
+        {
+            GameObject newBall = Instantiate(ballPrefab, transform.position, Quaternion.identity);
+            newBall.GetComponent<Ball>().LaunchBall();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("PowerUp")) Instantiate(ballPrefab, transform.position, transform.rotation);
+        if (other.CompareTag("PowerUp")) LaunchMultipleBallsFromPlayer(2);
     }
 }

@@ -72,8 +72,8 @@ public class Ball : ManagedUpdateBehaviour
     {
         for (int i = 0; i < count; i++)
         {
-            Vector3 offset = new Vector3(Random.Range(-0.5f, 0.5f), 0, 0); //Ajuste de rango según sea necesario
-            Vector3 newPosition = FindObjectOfType<Player>().transform.position + offset;
+            Vector3 offset = new Vector3(Random.Range(-0.5f, 0.5f), 0, 0);
+            Vector3 newPosition = playerTransform.position + offset;
             GameObject newBall = Instantiate(gameObject, newPosition, Quaternion.identity);
             newBall.GetComponent<Ball>().LaunchBall();
         }
