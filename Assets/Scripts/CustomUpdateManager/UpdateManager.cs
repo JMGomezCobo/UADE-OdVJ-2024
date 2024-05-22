@@ -14,9 +14,10 @@ public class UpdateManager : MonoBehaviour
     }
     private void Update()
     {
-        int count = updateList.Count;
+        List<ManagedUpdateBehaviour> updateListCopy = new List<ManagedUpdateBehaviour>(updateList);
+        int count = updateListCopy.Count;
         for (int i = 0; i < count; i++)
-            updateList[i].UpdateMe();
+            updateListCopy[i].UpdateMe();
     }
     public void AddToUpdateList(ManagedUpdateBehaviour component)
     {

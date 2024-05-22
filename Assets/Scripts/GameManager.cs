@@ -11,6 +11,10 @@ public class GameManager : ManagedUpdateBehaviour
     public static GameManager Instance;
     [SerializeField] GameObject defeatScreen;
     [SerializeField] GameObject victoryScreen;
+    [SerializeField] GameObject Player;
+    [SerializeField] GameObject Boll;
+    [SerializeField] GameObject UI;
+    [SerializeField] GameObject LightProbe;
     Ball ball;
     public int lives = 3;
     public TMP_Text livesText;
@@ -47,6 +51,7 @@ public class GameManager : ManagedUpdateBehaviour
     {
         victoryScreen.SetActive(false);
         defeatScreen.SetActive(false);
+        Activate();
         lives += 3;
         ActivateAllChildren();
         ResetLevel();
@@ -55,10 +60,23 @@ public class GameManager : ManagedUpdateBehaviour
         if (lives > 3) lives = 3;
 
     }
+    public void Activate()
+    {
+        Player.SetActive(true);
+        Boll.SetActive(true);
+        UI.SetActive(true);
+        LightProbe.SetActive(true);
+    }
+
     public void ActivateAllChildren()
     {
         foreach (Transform child in transform)
             child.gameObject.SetActive(true);
+    }
+    public void DeactivateAllChildren()
+    {
+        foreach (Transform child in transform)
+            child.gameObject.SetActive(false);
     }
 
     public void CheckLevelCompleted()
@@ -79,13 +97,24 @@ public class GameManager : ManagedUpdateBehaviour
         Time.timeScale = 0f;
         if (defeatScreen == null) return;
         defeatScreen.SetActive(true);
+        Deactivate();
+        DeactivateAllChildren();
     }
     public void VictoryScreen()
     {
         Time.timeScale = 0f;
         if (victoryScreen == null) return;
         victoryScreen.SetActive(true);
+        Deactivate();
     }
+    public void Deactivate()
+    {
+        Player.SetActive(false);
+        Boll.SetActive(false);
+        UI.SetActive(false);
+        LightProbe.SetActive(false);
+    }
+
     public void Exit()
     {
         Application.Quit();

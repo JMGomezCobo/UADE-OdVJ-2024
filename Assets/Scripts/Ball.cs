@@ -20,9 +20,13 @@ public class Ball : ManagedUpdateBehaviour
     void Start()
     {
         gameManager = GameManager.Instance;
-        //startPosition = new Vector3(FindObjectOfType<Player>().transform.position.x, FindObjectOfType<Player>().transform.position.y + 0.5f, 0);
-        playerTransform = FindObjectOfType<Player>().transform;
-        ResetBall();
+        Player player = FindObjectOfType<Player>();
+        if (player != null)
+        {
+            playerTransform = FindObjectOfType<Player>().transform;
+            ResetBall();
+        }
+        else Debug.LogError("No se encontro player");
     }
     public override void UpdateMe()
     {
@@ -61,8 +65,14 @@ public class Ball : ManagedUpdateBehaviour
     }
     public void ResetBall()
     {
-        transform.position = new Vector3(FindObjectOfType<Player>().transform.position.x, FindObjectOfType<Player>().transform.position.y + 0.5f, 0);
-        velocity = Vector3.zero;
+        Player player = FindObjectOfType<Player>();
+        if (player != null)
+        {
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 0.5f, 0);
+            velocity = Vector3.zero;
+        }
+        else Debug.LogError("No se encontro player");
+
     }
     public void LaunchBall()
     {
