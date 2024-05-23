@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
-public class Player : ManagedUpdateBehaviour
+public class Player : MonoBehaviour
 {
     private float inputValue;
     public float moveSpeed = 25f;
@@ -10,29 +11,39 @@ public class Player : ManagedUpdateBehaviour
     public float maxXPosition = 10f;
     private Vector3 startPosition;
     [SerializeField] GameObject ballPrefab;
+    
     private void Start()
     {
         startPosition = transform.position;
     }
 
-    public override void UpdateMe()
+    private void OnEnable()
+    {
+        CustomUpdateManager.Instance.SubscribeToUpdate(HandleMovement);
+    }
+    
+    public void HandleMovement()
     {
         float inputHorizontal = Input.GetAxisRaw("Horizontal");
         MovePlayer(inputHorizontal);
     }
+    
     public void ResetPlayer()
     {
         transform.position = startPosition;
     }
-    void MovePlayer(float inputHorizontal)
+
+    private void MovePlayer(float inputHorizontal)
     {
         float movementX = inputHorizontal * moveSpeed * Time.deltaTime;
-        float newXPosition = Mathf.Clamp(transform.position.x + movementX, - maxXPosition, maxXPosition);
+        var position = transform.position;
+        float newXPosition = Mathf.Clamp(position.x + movementX, - maxXPosition, maxXPosition);
         
-        transform.position = new Vector3(newXPosition, transform.position.y, transform.position.z);
+        position = new Vector3(newXPosition, position.y, position.z);
+        transform.position = position;
     }
-    
-    public void LaunchMultipleBallsFromPlayer(int count)
+
+    private void LaunchMultipleBallsFromPlayer(int count)
     {
         for (int i = 0; i < count; i++)
         {

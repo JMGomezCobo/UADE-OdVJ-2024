@@ -1,14 +1,15 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Ball : ManagedUpdateBehaviour
+public class Ball : MonoBehaviour
 {
     public float speed = 3;
     private Vector3 _velocity;
     private Transform _playerTransform;
     Vector3 _startPosition;
-    GameManager gameManager;
+    GameManager _gameManager;
     public static Ball Instance;
-    private bool readyToLaunch = true;
+    private bool _readyToLaunch = true;
 
     public void Awake()
     {
@@ -18,7 +19,7 @@ public class Ball : ManagedUpdateBehaviour
 
     private void Start()
     {
-        gameManager = GameManager.Instance;
+        _gameManager = GameManager.Instance;
         Player player = FindObjectOfType<Player>();
         
         if (player != null)
@@ -26,31 +27,36 @@ public class Ball : ManagedUpdateBehaviour
             _playerTransform = FindObjectOfType<Player>().transform;
             ResetBall();
         }
-        
-        else Debug.LogError("No se encontro player");
     }
-    public override void UpdateMe()
+    
+    private void OnEnable()
     {
-        if (readyToLaunch)
+        CustomUpdateManager.Instance.SubscribeToUpdate(UpdateBall);
+    }
+    
+    public void UpdateBall()
+    {
+        if (_readyToLaunch)
         {
             var playerPosition = _playerTransform.position;
             transform.position = new Vector3(playerPosition.x, playerPosition.y + 0.5f, 0);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && readyToLaunch)
+        if (Input.GetKeyDown(KeyCode.Space) && _readyToLaunch)
         {
             LaunchBall();
-            readyToLaunch = false;
+            _readyToLaunch = false;
         }
-        if (!readyToLaunch) transform.position += _velocity * Time.deltaTime;
+        
+        if (!_readyToLaunch) transform.position += _velocity * Time.deltaTime;
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("DeadZone")) 
         { 
-            gameManager.LoseHealth();
+            _gameManager.LoseHealth();
             ResetBall();
-            readyToLaunch=true;
+            _readyToLaunch=true;
         }
         else if (collision.gameObject.CompareTag("Player"))
         {
@@ -72,22 +78,20 @@ public class Ball : ManagedUpdateBehaviour
     public void ResetBall()
     {
         Player player = FindObjectOfType<Player>();
-        
-        if (player != null)
-        {
-            var playerPosition = player.transform.position;
-            
-            transform.position = new Vector3(playerPosition.x, playerPosition.y + 0.5f, 0);
-            _velocity = Vector3.zero;
-        }
-        
-        else Debug.LogError("No se encontro player");
 
+        if (player == null) return;
+        
+        var playerPosition = player.transform.position;
+            
+        transform.position = new Vector3(playerPosition.x, playerPosition.y + 0.5f, 0);
+        _velocity = Vector3.zero;
     }
+    
     public void LaunchBall()
     {
            _velocity = new Vector3(Random.Range(-1, 1f), 1, 0).normalized * speed;
     }
+    
     public void LaunchMultipleBalls(int count)
     {
         for (int i = 0; i < count; i++)

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 
 
-public class GameManager : ManagedUpdateBehaviour
+public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     [SerializeField] GameObject defeatScreen;
@@ -29,13 +29,20 @@ public class GameManager : ManagedUpdateBehaviour
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
-    public override void UpdateMe()
+    
+    private void OnEnable()
+    {
+        CustomUpdateManager.Instance.SubscribeToUpdate(UpdateUI);
+    }
+
+    private void UpdateUI()
     {
         if (Input.GetKeyUp(KeyCode.Escape)) LoadMainMenu();
         if (Input.GetKeyUp(KeyCode.R)) ResetGame();
         CheckLevelCompleted();
         UpdateLivesUI();
     }
+    
     public void LoseHealth()
     {
         lives--;
