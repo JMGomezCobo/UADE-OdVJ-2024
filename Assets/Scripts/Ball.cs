@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Ball : ManagedUpdateBehaviour
 {
     public float speed = 3;
-    private Vector3 velocity;
-    private Transform playerTransform;
-    Vector3 startPosition;
+    private Vector3 _velocity;
+    private Transform _playerTransform;
+    Vector3 _startPosition;
     GameManager gameManager;
     public static Ball Instance;
     private bool readyToLaunch = true;
@@ -17,26 +15,34 @@ public class Ball : ManagedUpdateBehaviour
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
-    void Start()
+
+    private void Start()
     {
         gameManager = GameManager.Instance;
         Player player = FindObjectOfType<Player>();
+        
         if (player != null)
         {
-            playerTransform = FindObjectOfType<Player>().transform;
+            _playerTransform = FindObjectOfType<Player>().transform;
             ResetBall();
         }
+        
         else Debug.LogError("No se encontro player");
     }
     public override void UpdateMe()
     {
-        if (readyToLaunch) transform.position = new Vector3(playerTransform.position.x, playerTransform.position.y + 0.5f, 0);
+        if (readyToLaunch)
+        {
+            var playerPosition = _playerTransform.position;
+            transform.position = new Vector3(playerPosition.x, playerPosition.y + 0.5f, 0);
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && readyToLaunch)
         {
             LaunchBall();
             readyToLaunch = false;
         }
-        if (!readyToLaunch) transform.position += velocity * Time.deltaTime;
+        if (!readyToLaunch) transform.position += _velocity * Time.deltaTime;
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -50,40 +56,45 @@ public class Ball : ManagedUpdateBehaviour
         {
             float hitFactor = (transform.position.x - collision.transform.position.x) / collision.collider.bounds.size.x;
             Vector3 direction = new Vector3(hitFactor, 1, 0).normalized;
-            velocity = direction * speed;
+            _velocity = direction * speed;
         }
         else if (collision.gameObject.CompareTag("Brick"))
         {
             Vector3 normal = collision.contacts[0].normal;
-            velocity = Vector3.Reflect(velocity, normal);
+            _velocity = Vector3.Reflect(_velocity, normal);
         }
         else
         {
             Vector3 normal = collision.contacts[0].normal;
-            velocity = Vector3.Reflect(velocity, normal);
+            _velocity = Vector3.Reflect(_velocity, normal);
         }
     }
     public void ResetBall()
     {
         Player player = FindObjectOfType<Player>();
+        
         if (player != null)
         {
-            transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 0.5f, 0);
-            velocity = Vector3.zero;
+            var playerPosition = player.transform.position;
+            
+            transform.position = new Vector3(playerPosition.x, playerPosition.y + 0.5f, 0);
+            _velocity = Vector3.zero;
         }
+        
         else Debug.LogError("No se encontro player");
 
     }
     public void LaunchBall()
     {
-           velocity = new Vector3(Random.Range(-1, 1f), 1, 0).normalized * speed;
+           _velocity = new Vector3(Random.Range(-1, 1f), 1, 0).normalized * speed;
     }
     public void LaunchMultipleBalls(int count)
     {
         for (int i = 0; i < count; i++)
         {
             Vector3 offset = new Vector3(Random.Range(-0.5f, 0.5f), 0, 0);
-            Vector3 newPosition = playerTransform.position + offset;
+            Vector3 newPosition = _playerTransform.position + offset;
+            
             GameObject newBall = Instantiate(gameObject, newPosition, Quaternion.identity);
             newBall.GetComponent<Ball>().LaunchBall();
         }
