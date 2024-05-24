@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        victoryScreen.SetActive(false);
+        defeatScreen.SetActive(false);
         Time.timeScale = 1f;
         ball = Ball.Instance;
     }
@@ -56,15 +58,8 @@ public class GameManager : MonoBehaviour
     }
     public void ResetGame()
     {
-        victoryScreen.SetActive(false);
-        defeatScreen.SetActive(false);
-        Activate();
-        lives += 3;
-        ActivateAllChildren();
-        ResetLevel();
-        ball.ResetBall();
         Time.timeScale = 1f;
-        if (lives > 3) lives = 3;
+        SceneManager.LoadScene(1);
 
     }
     public void Activate()
@@ -97,13 +92,14 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
-        if (allObjectsInactive) VictoryScreen();
+        if (allObjectsInactive && lives > 0) VictoryScreen();
     }
     public void DefeatScreen()
     {
         Time.timeScale = 0f;
         if (defeatScreen == null) return;
         defeatScreen.SetActive(true);
+        victoryScreen.SetActive(false);
         Deactivate();
         DeactivateAllChildren();
     }
