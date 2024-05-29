@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     Ball ball;
     public int lives = 3;
     public TMP_Text livesText;
+    
 
     private void Start()
     {
