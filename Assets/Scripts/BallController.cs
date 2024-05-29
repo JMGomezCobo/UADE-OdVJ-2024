@@ -1,14 +1,14 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Ball : MonoBehaviour
+public class BallController : MonoBehaviour
 {
     public float speed = 3;
     private Vector3 _velocity;
     private Transform _playerTransform;
     Vector3 _startPosition;
     GameManager _gameManager;
-    public static Ball Instance;
+    public static BallController Instance;
     private bool _readyToLaunch = true;
 
     public void Awake()
@@ -20,11 +20,11 @@ public class Ball : MonoBehaviour
     private void Start()
     {
         _gameManager = GameManager.Instance;
-        Player player = FindObjectOfType<Player>();
+        PaddleController paddleController = FindObjectOfType<PaddleController>();
         
-        if (player != null)
+        if (paddleController != null)
         {
-            _playerTransform = FindObjectOfType<Player>().transform;
+            _playerTransform = FindObjectOfType<PaddleController>().transform;
             ResetBall();
         }
     }
@@ -77,11 +77,11 @@ public class Ball : MonoBehaviour
     }
     public void ResetBall()
     {
-        Player player = FindObjectOfType<Player>();
+        PaddleController paddleController = FindObjectOfType<PaddleController>();
 
-        if (player == null) return;
+        if (paddleController == null) return;
         
-        var playerPosition = player.transform.position;
+        var playerPosition = paddleController.transform.position;
             
         transform.position = new Vector3(playerPosition.x, playerPosition.y + 0.5f, 0);
         _velocity = Vector3.zero;
@@ -100,7 +100,7 @@ public class Ball : MonoBehaviour
             Vector3 newPosition = _playerTransform.position + offset;
             
             GameObject newBall = Instantiate(gameObject, newPosition, Quaternion.identity);
-            newBall.GetComponent<Ball>().LaunchBall();
+            newBall.GetComponent<BallController>().LaunchBall();
         }
     }
 }

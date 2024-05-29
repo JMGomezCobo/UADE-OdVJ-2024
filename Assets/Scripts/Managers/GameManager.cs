@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject Boll;
     [SerializeField] GameObject UI;
     [SerializeField] GameObject LightProbe;
-    Ball ball;
+    BallController _ballController;
     public int lives = 3;
     public TMP_Text livesText;
     
@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         victoryScreen.SetActive(false);
         defeatScreen.SetActive(false);
         Time.timeScale = 1f;
-        ball = Ball.Instance;
+        _ballController = BallController.Instance;
     }
     public void Awake()
     {
@@ -54,8 +54,8 @@ public class GameManager : MonoBehaviour
     }
     public void ResetLevel()
     {
-        ball.ResetBall();
-        FindObjectOfType<Player>().ResetPlayer();
+        _ballController.ResetBall();
+        FindObjectOfType<PaddleController>().ResetPlayer();
     }
     public void ResetGame()
     {
