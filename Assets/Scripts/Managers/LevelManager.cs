@@ -21,10 +21,7 @@ namespace Managers
                 Instance = this;
                 DontDestroyOnLoad(gameObject);
             }
-            else
-            {
-                Destroy(gameObject);
-            }
+            else Destroy(gameObject);
         }
 
         private void Start()
