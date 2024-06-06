@@ -3,15 +3,20 @@ using UnityEngine;
 public class Brick : MonoBehaviour
 {
     [SerializeField] GameObject multiballPowerUpPrefab;
-    private bool HasLife;
+    public bool HasLife;
     public int Vida;
+
+    private void Start()
+    {
+        HasLife = true;
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
-       if (collision.gameObject.CompareTag("Ball")) 
+       if (collision.gameObject.CompareTag("Ball") && HasLife) 
        {
           Vida -= 1;
-          if (Vida == 0) HasLife = false;
+          if (Vida <= 0) HasLife = false;
           if (!HasLife)
           {
              FindObjectOfType<GameManager>().CheckLevelCompleted();
