@@ -493,6 +493,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: Vida
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: HasLife
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5532192287240746636, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
       propertyPath: m_Name
       value: Prefab_Brick_Cyan (6)
@@ -1699,6 +1707,14 @@ PrefabInstance:
     - target: {fileID: 2475020819283865929, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: Vida
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: HasLife
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5532192287240746636, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
       propertyPath: m_Name
@@ -8344,6 +8360,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: Vida
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: HasLife
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5532192287240746636, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
       propertyPath: m_Name
       value: Prefab_Brick_Cyan (4)
@@ -8870,6 +8894,14 @@ PrefabInstance:
     - target: {fileID: 2475020819283865929, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: Vida
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: HasLife
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5532192287240746636, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
       propertyPath: m_Name
@@ -11071,6 +11103,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: Vida
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: HasLife
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5532192287240746636, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
       propertyPath: m_Name
       value: Prefab_Brick_Cyan (2)
@@ -12092,6 +12132,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: Vida
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: HasLife
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5532192287240746636, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
       propertyPath: m_Name
       value: Prefab_Brick_Cyan (5)
@@ -12905,6 +12953,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: Vida
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: HasLife
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5532192287240746636, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
       propertyPath: m_Name
       value: Prefab_Brick_Cyan (7)
@@ -13189,6 +13245,14 @@ PrefabInstance:
     - target: {fileID: 2475020819283865929, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: Vida
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
+      propertyPath: HasLife
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5532192287240746636, guid: 4f75be2b99ae6e54289b63d9c744cf58, type: 3}
       propertyPath: m_Name
@@ -13626,9 +13690,9 @@ SceneRoots:
   - {fileID: 328507521}
   - {fileID: 286763512}
   - {fileID: 1432538674}
-  - {fileID: 2035205658}
   - {fileID: 807035466}
   - {fileID: 930614661}
+  - {fileID: 2035205658}
   - {fileID: 1847470634}
   - {fileID: 2097610730}
   - {fileID: 1507504222}
