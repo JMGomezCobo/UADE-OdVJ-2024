@@ -8,7 +8,8 @@ public class MultiballPowerUp : MonoBehaviour
     {
         if (other.CompareTag("Player")) 
         {
-            PaddleController paddleController = other.GetComponent<PaddleController>();
+            BallController ballController = FindObjectOfType<BallController>();
+            if (ballController != null) ballController.LaunchMultipleBalls(transform.position, 2);
             Destroy(gameObject);
         }
         if (other.CompareTag("DeadZone")) Destroy(gameObject);

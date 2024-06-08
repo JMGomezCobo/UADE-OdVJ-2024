@@ -92,12 +92,12 @@ public class BallController : MonoBehaviour
            _velocity = new Vector3(Random.Range(-1, 1f), 1, 0).normalized * speed;
     }
     
-    public void LaunchMultipleBalls(int count)
+    public void LaunchMultipleBalls(Vector3 position, int count)
     {
         for (int i = 0; i < count; i++)
         {
             Vector3 offset = new Vector3(Random.Range(-0.5f, 0.5f), 0, 0);
-            Vector3 newPosition = _playerTransform.position + offset;
+            Vector3 newPosition = position + offset;
             
             GameObject newBall = Instantiate(gameObject, newPosition, Quaternion.identity);
             newBall.GetComponent<BallController>().LaunchBall();
