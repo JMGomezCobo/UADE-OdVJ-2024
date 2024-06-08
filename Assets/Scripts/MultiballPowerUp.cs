@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class MultiballPowerUp : MonoBehaviour
 {
+    public GameObject Ball;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player")) 
         {
-            BallController ballController = FindObjectOfType<BallController>();
-            if (ballController != null) ballController.LaunchMultipleBalls(transform.position, 2);
+            Instantiate(Ball,this.position,Quaternion.identity);
             Destroy(gameObject);
         }
         if (other.CompareTag("DeadZone")) Destroy(gameObject);
