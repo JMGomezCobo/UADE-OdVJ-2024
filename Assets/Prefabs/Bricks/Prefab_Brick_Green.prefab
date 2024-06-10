@@ -67,9 +67,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e293c899b2100db46849dfc923f2b41b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiballPowerUpPrefab: {fileID: 2621147438004512525, guid: 2cc68d79b0cdff84e987ce7a81aa6270, type: 3}
-  HasLife: 0
-  Vida: 0
+  brickData: {fileID: 11400000, guid: daadbaddcf1f22849a71f2ad77d93fdd, type: 2}
+  onBrickDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &5827051492456826722
 PrefabInstance:
   m_ObjectHideFlags: 0

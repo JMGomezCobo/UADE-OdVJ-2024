@@ -1,75 +1,55 @@
+using System;
+using TMPro;
 using UnityEngine;
 
 namespace Managers
 {
     public class UIManager : MonoBehaviour
     {
-        public GameObject winPanel;
-        public GameObject gameOverPanel;
-        public GameObject pausePanel;
-    
-        public static UIManager Instance;
-
-        private void Awake()
-        {
-            if (Instance == null)
-            {
-                Instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
-        }
-
-        private void OnEnable()
-        {
-            LevelManager.Instance.onWin.AddListener(ShowWinScreen);
-            LevelManager.Instance.onGameOver.AddListener(ShowGameOverScreen);
-            LevelManager.Instance.onPause.AddListener(ShowPauseScreen);
-            LevelManager.Instance.onResume.AddListener(HidePauseScreen);
-        }
-
-        private void OnDisable()
-        {
-            if (GameManager.Instance == null) return;
+        [Header("UI │ Screens")]
+        public GameObject winScreen;
+        public GameObject gameOverScreen;
+        public GameObject pauseScreen;
         
-            LevelManager.Instance.onWin.RemoveListener(ShowWinScreen);
-            LevelManager.Instance.onGameOver.RemoveListener(ShowGameOverScreen);
-            LevelManager.Instance.onPause.RemoveListener(ShowPauseScreen);
-            LevelManager.Instance.onResume.RemoveListener(HidePauseScreen);
+        [Header("UI │ Texts")]
+        public TextMeshProUGUI scoreText;
+        public TextMeshProUGUI livesText;
+
+        private void Start()
+        {
+            winScreen.SetActive(false);
+            gameOverScreen.SetActive(false);
+            pauseScreen.SetActive(false);
         }
 
         public void ShowWinScreen()
         {
-            winPanel.SetActive(true);
-            gameOverPanel.SetActive(false);
-            pausePanel.SetActive(false);
+            winScreen.SetActive(true);
         }
 
         public void ShowGameOverScreen()
         {
-            gameOverPanel.SetActive(true);
-            winPanel.SetActive(false);
-            pausePanel.SetActive(false);
+            gameOverScreen.SetActive(true);
         }
 
         public void ShowPauseScreen()
         {
-            pausePanel.SetActive(true);
+            pauseScreen.SetActive(true);
         }
 
         public void HidePauseScreen()
         {
-            pausePanel.SetActive(false);
+            pauseScreen.SetActive(false);
         }
-        
-        public void HideAllScreens()
+
+        public void UpdateScore(int score)
         {
-            winPanel.SetActive(false);
-            gameOverPanel.SetActive(false);
-            pausePanel.SetActive(false);
+            scoreText.text = "Score: " + score;
+        }
+
+        public void UpdateLives(int lives)
+        {
+            livesText.text = "Lives: " + lives;
         }
     }
 }

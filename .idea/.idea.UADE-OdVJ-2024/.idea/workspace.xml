@@ -5,7 +5,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee662335-c81c-4b91-86e6-2f237c258beb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Black SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Black SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Black.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Bold SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Bold SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Bold.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Light SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Light SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Light.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Regular SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Regular SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Regular.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Thin SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Thin SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/UI/Fonts/Font_Lato_Thin.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Cyan.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Cyan.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Green.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Green.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Orange.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Orange.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Red.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Red.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Yellow.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Yellow.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Ball 1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Ball 1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PowerUp_Multiball.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PowerUp_Multiball.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay 1.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay 1.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BrickController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BrickController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BrickData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BrickData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MultiBallController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MultiBallController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UADE-OdVJ-2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UADE-OdVJ-2024/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Object/Material_Object_Cyan.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Object/Material_Object_Cyan.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Object/Material_Object_Purple.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Object/Material_Object_Purple.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bricks/Prefab_Brick_Cyan.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bricks/Prefab_Brick_Cyan.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bricks/Prefab_Brick_Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bricks/Prefab_Brick_Green.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bricks/Prefab_Brick_Orange.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bricks/Prefab_Brick_Orange.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bricks/Prefab_Brick_Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bricks/Prefab_Brick_Red.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bricks/Prefab_Brick_Yellow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bricks/Prefab_Brick_Yellow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power-Up.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Power-Up.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/GlobalVolume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles/GlobalVolume Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Brick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Brick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/CustomUpdateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/CustomUpdateManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MultiballPowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MultiballPowerUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PaddleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PaddleController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +88,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BrickData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MultiBallController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -37,7 +112,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Roberto&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;JMGomezCobo-Test&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -103,6 +178,9 @@
       <workItem from="1716995770592" duration="593000" />
       <workItem from="1717009972675" duration="4506000" />
       <workItem from="1717633333999" duration="910000" />
+      <workItem from="1717949025016" duration="5130000" />
+      <workItem from="1717962273204" duration="4851000" />
+      <workItem from="1718023874942" duration="7066000" />
     </task>
     <servers />
   </component>

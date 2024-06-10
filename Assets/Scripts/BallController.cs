@@ -1,3 +1,4 @@
+using Managers;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -50,21 +51,22 @@ public class BallController : MonoBehaviour
         
         if (!_readyToLaunch) transform.position += _velocity * Time.deltaTime;
     }
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("DeadZone")) 
+        if (collision.gameObject.layer == LayerMask.NameToLayer("DeadZone"))
         { 
             _gameManager.LoseHealth();
             ResetBall();
-            _readyToLaunch=true;
+            _readyToLaunch = true;
         }
-        else if (collision.gameObject.CompareTag("Player"))
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             float hitFactor = (transform.position.x - collision.transform.position.x) / collision.collider.bounds.size.x;
             Vector3 direction = new Vector3(hitFactor, 1, 0).normalized;
             _velocity = direction * speed;
         }
-        else if (collision.gameObject.CompareTag("Brick"))
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Bricks"))
         {
             Vector3 normal = collision.contacts[0].normal;
             _velocity = Vector3.Reflect(_velocity, normal);
@@ -75,6 +77,7 @@ public class BallController : MonoBehaviour
             _velocity = Vector3.Reflect(_velocity, normal);
         }
     }
+
     public void ResetBall()
     {
         PaddleController paddleController = FindObjectOfType<PaddleController>();
@@ -89,18 +92,6 @@ public class BallController : MonoBehaviour
     
     public void LaunchBall()
     {
-           _velocity = new Vector3(Random.Range(-1, 1f), 1, 0).normalized * speed;
-    }
-    
-    public void LaunchMultipleBalls(Vector3 position, int count)
-    {
-        for (int i = 0; i < count; i++)
-        {
-            Vector3 offset = new Vector3(Random.Range(-0.5f, 0.5f), 0, 0);
-            Vector3 newPosition = position + offset;
-            
-            GameObject newBall = Instantiate(gameObject, newPosition, Quaternion.identity);
-            newBall.GetComponent<BallController>().LaunchBall();
-        }
+        _velocity = new Vector3(Random.Range(-1, 1f), 1, 0).normalized * speed;
     }
 }

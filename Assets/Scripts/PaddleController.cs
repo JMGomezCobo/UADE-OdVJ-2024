@@ -1,3 +1,4 @@
+using Managers;
 using UnityEngine;
 
 public class PaddleController : MonoBehaviour
@@ -31,19 +32,5 @@ public class PaddleController : MonoBehaviour
     public void ResetPlayer()
     {
         transform.position = startPosition;
-    }
-    
-    private void LaunchMultipleBallsFromPlayer(int count)
-    {
-        for (int i = 0; i < count; i++)
-        {
-            GameObject newBall = Instantiate(ballPrefab, transform.position, Quaternion.identity);
-            newBall.GetComponent<BallController>().LaunchBall();
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("PowerUp")) LaunchMultipleBallsFromPlayer(2);
     }
 }

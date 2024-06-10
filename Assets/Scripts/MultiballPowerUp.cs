@@ -1,17 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class MultiballPowerUp : MonoBehaviour
+public class MultiBallPowerUp : MonoBehaviour
 {
-    public GameObject Ball;
+    public int numberOfBallsToSpawn = 3;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) 
+        if (!other.CompareTag("Player")) return;
+        SpawnBalls();
+        
+        Destroy(gameObject);
+    }
+
+    private void SpawnBalls()
+    {
+        Transform playerTransform = FindObjectOfType<PaddleController>().transform;
+        
+        for (int i = 0; i < numberOfBallsToSpawn; i++)
         {
-            Instantiate(Ball,this.position,Quaternion.identity);
-            Destroy(gameObject);
+            GameObject newBall = ObjectPool.Instance.GetObject();
+            newBall.transform.position = playerTransform.position + Vector3.up * 0.5f;
+            
+            MultiBallController ballController = newBall.GetComponent<MultiBallController>();
+            ballController.LaunchBall();
         }
-        if (other.CompareTag("DeadZone")) Destroy(gameObject);
     }
 }
