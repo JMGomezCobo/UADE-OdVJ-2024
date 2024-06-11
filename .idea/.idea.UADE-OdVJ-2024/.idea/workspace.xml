@@ -6,13 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ee662335-c81c-4b91-86e6-2f237c258beb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UADE-OdVJ-2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UADE-OdVJ-2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Cyan.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Cyan.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Green.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Green.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Orange.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Orange.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Red.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Red.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Yellow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Yellow.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bricks/Prefab_Brick_Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bricks/Prefab_Brick_Red.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MultiBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MultiBall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerBall.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PowerUp_Multiball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PowerUp_Multiball.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,27 +43,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\juanm\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\juanm\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\juanm\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\juanm\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\juanm\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\juanm\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="E:\Tools\Videogame Engines\Unity\Unity Installs\2022.3.16f1\Editor\Unity.exe" />
@@ -119,6 +119,7 @@
       <workItem from="1718023874942" duration="7066000" />
       <workItem from="1718043199178" duration="230000" />
       <workItem from="1718106443742" duration="2684000" />
+      <workItem from="1718134926195" duration="2381000" />
     </task>
     <servers />
   </component>

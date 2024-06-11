@@ -6,9 +6,10 @@ public class BallController : Ball
     public static BallController Instance;
     
     private Transform _playerTransform;
-    private GameManager _gameManager;
-    
-    private float speedMultiplier = 1.1f;
+    private LevelManager _gameManager;
+
+    [SerializeField] private float speedMultiplier = 1.0125f;
+    [SerializeField] private float maxSpeed = 1.5f;
     
     private bool _readyToLaunch = true;
 
@@ -20,7 +21,7 @@ public class BallController : Ball
 
     protected override void InitializeBall()
     {
-        _gameManager = GameManager.Instance;
+        _gameManager = LevelManager.Instance;
         PaddleController paddleController = FindObjectOfType<PaddleController>();
 
         if (paddleController == null) return;
@@ -55,7 +56,7 @@ public class BallController : Ball
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("DeadZone"))
         {
-            _gameManager.LoseHealth();
+            _gameManager.LoseLife();
             ResetBall();
             
             _readyToLaunch = true;
@@ -87,7 +88,11 @@ public class BallController : Ball
     
     private void IncreaseSpeed()
     {
-        Debug.Log(speed + speedMultiplier);
         Velocity *= speedMultiplier;
+        
+        if (Velocity.magnitude > maxSpeed)
+        {
+            Velocity = Velocity.normalized * maxSpeed;
+        }
     }
 }

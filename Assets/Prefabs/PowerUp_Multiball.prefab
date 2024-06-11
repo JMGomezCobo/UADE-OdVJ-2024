@@ -4927,7 +4927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5d4a4f54b02e548bd0810f4ed964be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfBallsToSpawn: 3
+  numberOfBallsToSpawn: 2
 --- !u!1 &8721439509099668158
 GameObject:
   m_ObjectHideFlags: 0

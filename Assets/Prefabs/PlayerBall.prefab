@@ -118,6 +118,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  speedMultiplier: 1.1
+  maxSpeed: 5
 --- !u!1 &5023203924155417988
 GameObject:
   m_ObjectHideFlags: 0
