@@ -8,6 +8,8 @@ public class BallController : Ball
     private Transform _playerTransform;
     private GameManager _gameManager;
     
+    private float speedMultiplier = 1.1f;
+    
     private bool _readyToLaunch = true;
 
     public new void Awake()
@@ -61,6 +63,7 @@ public class BallController : Ball
         
         else
         {
+            IncreaseSpeed();
             base.OnCollisionEnter(collision);
         }
     }
@@ -80,5 +83,11 @@ public class BallController : Ball
     public override void LaunchBall()
     {
         Velocity = new Vector3(Random.Range(-1, 1f), 1, 0).normalized * speed;
+    }
+    
+    private void IncreaseSpeed()
+    {
+        Debug.Log(speed + speedMultiplier);
+        Velocity *= speedMultiplier;
     }
 }

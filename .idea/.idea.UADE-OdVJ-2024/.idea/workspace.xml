@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee662335-c81c-4b91-86e6-2f237c258beb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UADE-OdVJ-2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UADE-OdVJ-2024/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Cyan.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Cyan.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Green.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Green.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Orange.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Orange.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Red.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Red.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Yellow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Yellow.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PowerUp_Multiball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PowerUp_Multiball.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
