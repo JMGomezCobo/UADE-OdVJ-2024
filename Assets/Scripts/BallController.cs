@@ -23,6 +23,10 @@ public class BallController : MonoBehaviour
         _gameManager = GameManager.Instance;
         PaddleController paddleController = FindObjectOfType<PaddleController>();
         
+        //acá tenemos un caso de CACHING ya que nos
+        //estamos guardando el resultado de una operación muy costosa
+        //para utilizarlo más adelante
+
         if (paddleController != null)
         {
             _playerTransform = FindObjectOfType<PaddleController>().transform;
@@ -37,6 +41,10 @@ public class BallController : MonoBehaviour
     
     public void UpdateBall()
     {
+        //acá hay varios ejemplos de precomputation
+        //donde hacemos cálculos dentro de condicionales
+        //para usar los resultados más adelante.
+
         if (_readyToLaunch)
         {
             var playerPosition = _playerTransform.position;
@@ -54,23 +62,32 @@ public class BallController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("DeadZone"))
-        { 
-            _gameManager.LoseHealth();
-            ResetBall();
-            _readyToLaunch = true;
+        //acá tenemos un caso de reordenamiento de código
+        //en base al EXPECTED PATH.
+        //Estamos suponiendo que el procesamiento de datos
+        //más probable va a ser que la pelota primero choque
+        //con los ladrillos, luego con la paleta y finalmente las dead zones
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Bricks"))
+        {
+            Vector3 normal = collision.contacts[0].normal;
+            _velocity = Vector3.Reflect(_velocity, normal);
         }
+
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             float hitFactor = (transform.position.x - collision.transform.position.x) / collision.collider.bounds.size.x;
             Vector3 direction = new Vector3(hitFactor, 1, 0).normalized;
             _velocity = direction * speed;
         }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("Bricks"))
-        {
-            Vector3 normal = collision.contacts[0].normal;
-            _velocity = Vector3.Reflect(_velocity, normal);
+        
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("DeadZone"))
+        { 
+            _gameManager.LoseHealth();
+            ResetBall();
+            _readyToLaunch = true;
         }
+
         else
         {
             Vector3 normal = collision.contacts[0].normal;
