@@ -16,6 +16,7 @@ public class ObjectPool : MonoBehaviour
             Instance = this;
             InitializePool();
         }
+        
         else
         {
             Destroy(gameObject);
@@ -28,6 +29,7 @@ public class ObjectPool : MonoBehaviour
         {
             GameObject obj = Instantiate(ballPrefab);
             obj.SetActive(false);
+            
             _pool.Enqueue(obj);
         }
     }
@@ -38,12 +40,15 @@ public class ObjectPool : MonoBehaviour
         {
             GameObject obj = _pool.Dequeue();
             obj.SetActive(true);
+            
             return obj;
         }
+        
         else
         {
             GameObject obj = Instantiate(ballPrefab);
             obj.SetActive(true);
+            
             return obj;
         }
     }

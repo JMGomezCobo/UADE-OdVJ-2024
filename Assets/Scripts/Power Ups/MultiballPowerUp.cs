@@ -1,28 +1,31 @@
 using UnityEngine;
 
-public class MultiBallPowerUp : MonoBehaviour
+namespace Power_Ups
 {
-    public int numberOfBallsToSpawn = 3;
-
-    private void OnTriggerEnter(Collider other)
+    public class MultiBallPowerUp : MonoBehaviour
     {
-        if (!other.CompareTag("Player")) return;
-        SpawnBalls();
-        
-        Destroy(gameObject);
-    }
+        public int numberOfBallsToSpawn = 3;
 
-    private void SpawnBalls()
-    {
-        Transform playerTransform = FindObjectOfType<PaddleController>().transform;
-        
-        for (int i = 0; i < numberOfBallsToSpawn; i++)
+        private void OnTriggerEnter(Collider other)
         {
-            GameObject newBall = ObjectPool.Instance.GetObject();
-            newBall.transform.position = playerTransform.position + Vector3.up * 0.5f;
+            if (!other.CompareTag("Player")) return;
+        
+            SpawnBalls();
+            Destroy(gameObject);
+        }
+
+        private void SpawnBalls()
+        {
+            Transform playerTransform = FindObjectOfType<PaddleController>().transform;
+        
+            for (int i = 0; i < numberOfBallsToSpawn; i++)
+            {
+                GameObject newBall = ObjectPool.Instance.GetObject();
+                newBall.transform.position = playerTransform.position + (Vector3.up * 0.5f);
             
-            MultiBallController ballController = newBall.GetComponent<MultiBallController>();
-            ballController.LaunchBall();
+                MultiBallController ballController = newBall.GetComponent<MultiBallController>();
+                ballController.LaunchBall();
+            }
         }
     }
 }
