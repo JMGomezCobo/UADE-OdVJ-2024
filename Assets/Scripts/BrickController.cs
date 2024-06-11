@@ -1,15 +1,12 @@
 using Managers;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class BrickController : MonoBehaviour
-{
+{ 
     public BrickData brickData;
-
-    public UnityEvent<int> onBrickDestroyed;
     private int _currentHits;
 
-    private void Start()
+   private void Start()
     {
         _currentHits = brickData.hitsToDestroy;
     }
@@ -28,8 +25,8 @@ public class BrickController : MonoBehaviour
 
     private void DestroyBrick()
     {
-        onBrickDestroyed.Invoke(brickData.pointValue);
-        LevelManager.Instance.BrickDestroyed();
+        GameManager.Instance.BrickDestroyed();
+        GameManager.Instance.AddScore(brickData.pointValue);
         
         TrySpawnPowerUp();
         Destroy(gameObject);

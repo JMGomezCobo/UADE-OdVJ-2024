@@ -6,22 +6,23 @@ public class BallController : Ball
     public static BallController Instance;
     
     private Transform _playerTransform;
-    private LevelManager _gameManager;
+    private GameManager _gameManager;
 
     [SerializeField] private float speedMultiplier = 1.0125f;
     [SerializeField] private float maxSpeed = 1.5f;
     
     private bool _readyToLaunch = true;
 
-    public new void Awake()
+    public void Awake()
     {
         if (Instance == null) Instance = this;
+        
         else Destroy(gameObject);
     }
 
     protected override void InitializeBall()
     {
-        _gameManager = LevelManager.Instance;
+        _gameManager = GameManager.Instance;
         PaddleController paddleController = FindObjectOfType<PaddleController>();
 
         if (paddleController == null) return;
@@ -56,7 +57,7 @@ public class BallController : Ball
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("DeadZone"))
         {
-            _gameManager.LoseLife();
+            GameManager.Instance.LoseLife();
             ResetBall();
             
             _readyToLaunch = true;

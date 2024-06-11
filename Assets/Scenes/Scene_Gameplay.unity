@@ -4366,7 +4366,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1032861661}
-  - component: {fileID: 1032861662}
   m_Layer: 6
   m_Name: Bricks
   m_TagString: Untagged
@@ -4394,26 +4393,6 @@ Transform:
   - {fileID: 1911115336}
   m_Father: {fileID: 1847470634}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1032861662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032861660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 424bc283a7842934184505c47af3b8cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defeatScreen: {fileID: 286763511}
-  victoryScreen: {fileID: 1432538673}
-  Player: {fileID: 3742374525087041184}
-  Boll: {fileID: 0}
-  UI: {fileID: 2035205654}
-  LightProbe: {fileID: 807035463}
-  lives: 3
-  livesText: {fileID: 2087582741}
 --- !u!1 &1051675638
 GameObject:
   m_ObjectHideFlags: 0
@@ -6535,6 +6514,34 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 9f1fd8c6f3ee1e14a9e88e8746dbb0ba, type: 3}
+      propertyPath: onBrickDestroyed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 9f1fd8c6f3ee1e14a9e88e8746dbb0ba, type: 3}
+      propertyPath: onBrickDestroyed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 9f1fd8c6f3ee1e14a9e88e8746dbb0ba, type: 3}
+      propertyPath: onBrickDestroyed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1708024423}
+    - target: {fileID: 5250133627614082020, guid: 9f1fd8c6f3ee1e14a9e88e8746dbb0ba, type: 3}
+      propertyPath: onBrickDestroyed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 9f1fd8c6f3ee1e14a9e88e8746dbb0ba, type: 3}
+      propertyPath: onBrickDestroyed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddScore
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 9f1fd8c6f3ee1e14a9e88e8746dbb0ba, type: 3}
+      propertyPath: onBrickDestroyed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Managers.LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250133627614082020, guid: 9f1fd8c6f3ee1e14a9e88e8746dbb0ba, type: 3}
+      propertyPath: onBrickDestroyed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5532192287240746636, guid: 9f1fd8c6f3ee1e14a9e88e8746dbb0ba, type: 3}
       propertyPath: m_Name
       value: Prefab_Brick_Orange (5)
@@ -6786,8 +6793,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
-  score: 0
-  totalBricks: 0
   onGameWin:
     m_PersistentCalls:
       m_Calls:
@@ -6840,36 +6845,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: Managers.UIManager, Assembly-CSharp
         m_MethodName: HidePauseScreen
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onLivesChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 255747152}
-        m_TargetAssemblyTypeName: Managers.UIManager, Assembly-CSharp
-        m_MethodName: UpdateLives
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onScoreChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 255747152}
-        m_TargetAssemblyTypeName: Managers.UIManager, Assembly-CSharp
-        m_MethodName: UpdateScore
-        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
