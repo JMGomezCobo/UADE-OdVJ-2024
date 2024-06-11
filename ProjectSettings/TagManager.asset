@@ -7,6 +7,7 @@ TagManager:
   - Ball
   - DeadZone
   - Brick
+  - PowerUp
   layers:
   - Default
   - TransparentFX
@@ -14,12 +15,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Bricks
+  - Ball
+  - Player
+  - Walls
+  - DeadZone
+  - PowerUps
   - 
   - 
   - 
