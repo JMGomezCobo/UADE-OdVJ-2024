@@ -6,7 +6,7 @@ public class MultiBallController : Ball
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("DeadZone"))
         {
-            ObjectPool.Instance.ReturnObject(gameObject); // Return the ball to the pool
+            ObjectPool.Instance.ReturnObject(gameObject);
         }
         
         else

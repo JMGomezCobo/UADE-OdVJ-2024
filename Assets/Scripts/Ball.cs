@@ -33,20 +33,10 @@ public abstract class Ball : MonoBehaviour
             Velocity = direction * speed;
         }
         
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("Bricks"))
-        {
-            BounceBall(collision);
-        }
-        
         else
         {
-            BounceBall(collision);
+            Vector3 normal = collision.contacts[0].normal;
+            Velocity = Vector3.Reflect(Velocity, normal);
         }
-    }
-
-    private void BounceBall(Collision collision)
-    {
-        Vector3 normal = collision.contacts[0].normal;
-        Velocity = Vector3.Reflect(Velocity, normal);
     }
 }
