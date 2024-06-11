@@ -15,12 +15,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Bricks
+  - Ball
+  - Player
+  - Walls
+  - DeadZone
+  - PowerUps
   - 
   - 
   - 

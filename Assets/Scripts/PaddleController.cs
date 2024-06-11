@@ -1,16 +1,17 @@
+using Managers;
 using UnityEngine;
 
 public class PaddleController : MonoBehaviour
 {
     public float speed = 10f;
-    public float boundary = 9f;
+    public float boundary = 8.75f;
     
-    private Vector3 startPosition;
-    [SerializeField] GameObject ballPrefab;
+    private Vector3 _startPosition;
+    [SerializeField] private GameObject ballPrefab;
     
     private void Start()
     {
-        startPosition = transform.position;
+        _startPosition = transform.position;
     }
 
     private void OnEnable()
@@ -30,20 +31,6 @@ public class PaddleController : MonoBehaviour
     
     public void ResetPlayer()
     {
-        transform.position = startPosition;
-    }
-    
-    private void LaunchMultipleBallsFromPlayer(int count)
-    {
-        for (int i = 0; i < count; i++)
-        {
-            GameObject newBall = Instantiate(ballPrefab, transform.position, Quaternion.identity);
-            newBall.GetComponent<BallController>().LaunchBall();
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("PowerUp")) LaunchMultipleBallsFromPlayer(2);
+        transform.position = _startPosition;
     }
 }

@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 8533269291899673756}
   - component: {fileID: 6574150286841583751}
   - component: {fileID: 6329842530280776037}
-  - component: {fileID: 8518144409624663687}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -96,30 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2a5ad64d2d93c24a9039a46b7d0da92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 25
-  maxSpeed: 25
-  maxXPosition: 7.2
+  speed: 10
+  boundary: 8.75
   ballPrefab: {fileID: 3338930691391246307, guid: bb8c467b7b098fe4db5d493b6236fd07, type: 3}
---- !u!259 &8518144409624663687
-LightProbeProxyVolume:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475290079378063951}
-  m_Enabled: 1
-  m_BoundingBoxMode: 0
-  m_ResolutionX: 2
-  m_ResolutionY: 2
-  m_ResolutionZ: 2
-  m_ResolutionProbesPerUnit: 0.25
-  m_BoundingBoxSize: {x: Infinity, y: Infinity, z: Infinity}
-  m_BoundingBoxOrigin: {x: 0, y: 0, z: 0}
-  m_ResolutionMode: 0
-  m_ProbePositionMode: 0
-  m_RefreshMode: 0
-  m_QualityMode: 1
-  m_DataFormat: 1
 --- !u!1 &2770444617326255337
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +109,7 @@ GameObject:
   - component: {fileID: 4031266580077715309}
   - component: {fileID: 2768089052041827043}
   - component: {fileID: 1561735217860838600}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Primitive_Cube_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

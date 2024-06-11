@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Managers;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -40,7 +41,7 @@ public class GameManager : MonoBehaviour
 
     private void UpdateUI()
     {
-        if (Input.GetKeyUp(KeyCode.Escape)) LoadMainMenu();
+        //if (Input.GetKeyUp(KeyCode.Escape)) LoadMainMenu();
         if (Input.GetKeyUp(KeyCode.R)) ResetGame();
         CheckLevelCompleted();
         UpdateLivesUI();
