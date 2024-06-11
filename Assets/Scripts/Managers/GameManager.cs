@@ -46,6 +46,12 @@ namespace Managers
             _score += points;
             UIManager.Instance.UpdateScore(_score);
         }
+        
+        public void AddLife(int amount)
+        {
+            lives += amount;
+            UIManager.Instance.UpdateLives(lives);
+        }
 
         public void LoseLife()
         {
