@@ -4,14 +4,14 @@ using UnityEngine;
 public class PaddleController : MonoBehaviour
 {
     public float speed = 10f;
-    public float boundary = 9f;
+    public float boundary = 8.75f;
     
-    private Vector3 startPosition;
-    [SerializeField] GameObject ballPrefab;
+    private Vector3 _startPosition;
+    [SerializeField] private GameObject ballPrefab;
     
     private void Start()
     {
-        startPosition = transform.position;
+        _startPosition = transform.position;
     }
 
     private void OnEnable()
@@ -31,6 +31,6 @@ public class PaddleController : MonoBehaviour
     
     public void ResetPlayer()
     {
-        transform.position = startPosition;
+        transform.position = _startPosition;
     }
 }

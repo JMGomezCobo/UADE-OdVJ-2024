@@ -5,82 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee662335-c81c-4b91-86e6-2f237c258beb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Art/arkanoid.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/arkanoid.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiBallController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiBallController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiballPowerUp.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiballPowerUp.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Fondo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Fondo/arkanoid.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Fondo/arkanoid.jpg.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/MultiBall.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/MultiBall.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerBall.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerBall.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ball.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UADE-OdVJ-2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UADE-OdVJ-2024/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Atlas.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MultiBallController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MultiBallController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MultiballPowerUp.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MultiballPowerUp.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Bullet_Up.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Bullet_Up.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Coin_Up.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Coin_Up.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Exclamation_Up.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Exclamation_Up.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Heal_Up.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Heal_Up.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Heart_Up.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Heart_Up.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Power_Down.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Power_Down.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Power_Up.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Power_Up.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Question_Up.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Question_Up.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Rocket_Up.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Rocket_Up.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Star_Up.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/FBX/Star_Up.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Materials/MAT_PowerUps.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Materials/MAT_PowerUps.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Materials/MAT_Shader_PowerUp.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Materials/MAT_Shader_PowerUp.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Power_Ups.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Power_Ups.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Bullet_Up.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Bullet_Up.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Coin_Up.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Coin_Up.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Exclamation_Up.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Exclamation_Up.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Heal_Up.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Heal_Up.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Heart_Up.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Heart_Up.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/PowerUp_Sphere.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/PowerUp_Sphere.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Power_Down.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Power_Down.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Power_Up.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Power_Up.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Question_Up.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Question_Up.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Rocket_Up.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Rocket_Up.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Star_Up.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Prefabs/Star_Up.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Scripts/ObjectBounce.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Scripts/ObjectBounce.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Shader/PickUp.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Shader/PickUp.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Textures/TX_PowerUps.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeKniKo_Free/Power_Ups/Textures/TX_PowerUps.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiBallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiBallController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiballPowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiballPowerUp.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,9 +32,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ball.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BrickData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MultiBallController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -185,6 +126,7 @@
       <workItem from="1717962273204" duration="4851000" />
       <workItem from="1718023874942" duration="7066000" />
       <workItem from="1718043199178" duration="230000" />
+      <workItem from="1718106443742" duration="2684000" />
     </task>
     <servers />
   </component>
