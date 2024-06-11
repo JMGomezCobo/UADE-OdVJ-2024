@@ -4360,7 +4360,7 @@ GameObject:
   - component: {fileID: 1032861662}
   m_Layer: 6
   m_Name: Bricks
-  m_TagString: Brick
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
