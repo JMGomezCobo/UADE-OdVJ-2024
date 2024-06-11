@@ -2142,7 +2142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lives:'
+  m_text: 'Lives: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc38224f48cb57d48b55cd6f24df8fb5, type: 2}
   m_sharedMaterial: {fileID: 8174181601020046567, guid: cc38224f48cb57d48b55cd6f24df8fb5, type: 2}
@@ -2995,7 +2995,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 350, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &730975382
 CanvasRenderer:
@@ -3025,7 +3025,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score:'
+  m_text: 'Score: 00000'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc38224f48cb57d48b55cd6f24df8fb5, type: 2}
   m_sharedMaterial: {fileID: 8174181601020046567, guid: cc38224f48cb57d48b55cd6f24df8fb5, type: 2}

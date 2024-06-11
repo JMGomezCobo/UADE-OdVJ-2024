@@ -36,6 +36,8 @@ public class ObjectPool : MonoBehaviour
 
     public GameObject GetObject()
     {
+        Debug.Log("Retrieve");
+        
         if (_pool.Count > 0)
         {
             GameObject obj = _pool.Dequeue();
