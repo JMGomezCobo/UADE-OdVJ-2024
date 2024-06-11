@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Gameplay Assets
+  m_EditorClassIdentifier: 
+  m_GroupName: Gameplay Assets
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7d739df6070ea8247a47c8dfda65f7ff
+  m_SerializeEntries:
+  - m_GUID: 20d11879c13460842bd9f28d44df6f05
+    m_Address: Assets/Art/Atlas_Materials.spriteatlas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8fb51c4b563cd5409356920a948f6b6
+    m_Address: Assets/Art/Atlas_Textures.spriteatlas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8931f75b0ceeb5a40aa69f4637e59811
+    m_Address: Assets/Art/Models/SM_Icon_Star_02.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eeffb28933fbc5d4081d28a612d59ede
+    m_Address: Assets/Art/Models/SM_Icon_Heart_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce8f07fe59a27e54a9a176b4f97f75ff
+    m_Address: Assets/Art/Models/Primitive_Sphere.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d56fe2ad841a4f429c64626c08eaae5
+    m_Address: Assets/Art/Models/Primitive_Cube.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e57695e992b91946a23ba40f5c01f2a
+    m_Address: Assets/Prefabs/Pickup_ExtraLife.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa91c322dba1a024585c6c7cb5e63501
+    m_Address: Assets/Prefabs/PowerUp_Multiball.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bb8c467b7b098fe4db5d493b6236fd07
+    m_Address: Assets/Prefabs/PlayerBall.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd5b8cf19de0a5347b8091b9517769ef
+    m_Address: Assets/Prefabs/MultiBall.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3710eeca2d6ef6b40857139ac7f72155
+    m_Address: Assets/Prefabs/Player.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6ac616850e19f05439477d62ef651051
+    m_Address: Assets/Prefabs/Light.lighting
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39b87db437cfa6747915f73a96482ed6
+    m_Address: Assets/Prefabs/Camera/Main Camera.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 358a4e30374798247ae906f29f2f01bb
+    m_Address: Assets/Prefabs/Bricks/Prefab_Brick_Green.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f75be2b99ae6e54289b63d9c744cf58
+    m_Address: Assets/Prefabs/Bricks/Prefab_Brick_Cyan.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7673967434d8c7940aa3f92e497e10d2
+    m_Address: Assets/Prefabs/Bricks/Prefab_Brick_Red.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e7b1b16d16d6554b96b7cc8408fd009
+    m_Address: Assets/Prefabs/Bricks/Prefab_Brick_Yellow.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9f1fd8c6f3ee1e14a9e88e8746dbb0ba
+    m_Address: Assets/Prefabs/Bricks/Prefab_Brick_Orange.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f3a1f32493024f641a2f497c5321a7a9, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c96dc7095fa6393479008ff9f09a37b7, type: 2}
+    - {fileID: 11400000, guid: 57db84cf2e6eb9e46b58392e9251c708, type: 2}
