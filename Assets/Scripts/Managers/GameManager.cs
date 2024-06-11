@@ -56,6 +56,12 @@ public class GameManager : MonoBehaviour
     public void ResetLevel()
     {
         _ballController.ResetBall();
+
+        //acá hay un caso de PRECOMPUTATION puesto que
+        //ya calculamos previamente la posición del jugador
+        //en el método "ResetPlayer()" y luego solamente
+        //la llamamos.
+
         FindObjectOfType<PaddleController>().ResetPlayer();
     }
     public void ResetGame()

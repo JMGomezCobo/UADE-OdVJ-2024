@@ -1,5 +1,9 @@
 using UnityEngine;
 
+//acá usamos herencia, por lo que tenemos un caso
+//de ESPECIALIZACIÓN, ya que tanto la pelota del jugador
+//como la del powerUp comparten lógica
+
 public class MultiBallController : Ball
 {
    private void OnCollisionEnter(Collision collision)

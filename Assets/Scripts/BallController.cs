@@ -1,6 +1,11 @@
 using Managers;
 using UnityEngine;
 
+
+//acá usamos herencia, por lo que tenemos un caso
+//de ESPECIALIZACIÓN, ya que tanto la pelota del jugador
+//como la del powerUp comparten lógica
+
 public class BallController : Ball
 {
     public static BallController Instance;
