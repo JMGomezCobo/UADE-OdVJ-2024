@@ -5,23 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee662335-c81c-4b91-86e6-2f237c258beb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/MultiBall.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/MultiBall.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerBall.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerBall.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ball.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Boing_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Boing_0.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Boing_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Boing_1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Boing_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Boing_2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_0.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_3.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_4.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_5.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_6.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_7.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_7.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_8.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_8.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_9.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_9.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Win_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Win_0.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Track_Loop_Loaf.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Track_Loop_Loaf.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UADE-OdVJ-2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UADE-OdVJ-2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Atlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Atlas.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Cyan.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Cyan.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Green.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Green.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Orange.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Orange.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Red.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Red.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Yellow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Yellow.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MultiBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MultiBall.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiBallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiBallController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiballPowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiballPowerUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +57,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ball.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BrickData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DamagePowerUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LifePickup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,7 +82,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;JMGomezCobo-Test&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -127,6 +153,7 @@
       <workItem from="1718023874942" duration="7066000" />
       <workItem from="1718043199178" duration="230000" />
       <workItem from="1718106443742" duration="2684000" />
+      <workItem from="1718134926195" duration="5008000" />
     </task>
     <servers />
   </component>

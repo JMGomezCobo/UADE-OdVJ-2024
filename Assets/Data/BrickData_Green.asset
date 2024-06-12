@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointValue: 200
   hitsToDestroy: 2
-  powerUpChance: 0.277
-  powerUpPrefab: {fileID: 7710830910432241147, guid: fa91c322dba1a024585c6c7cb5e63501, type: 3}
+  powerUpChance: 0.1
+  powerUpPrefab: {fileID: 3338930691391246307, guid: bd5b8cf19de0a5347b8091b9517769ef, type: 3}

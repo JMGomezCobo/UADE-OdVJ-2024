@@ -15,6 +15,19 @@ namespace Managers
         public TextMeshProUGUI scoreText;
         public TextMeshProUGUI livesText;
 
+        public static UIManager Instance;
+        
+        private void Awake()
+        {
+            if (Instance == null)
+            {
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            
+            else Destroy(gameObject);
+        }
+        
         private void Start()
         {
             winScreen.SetActive(false);
