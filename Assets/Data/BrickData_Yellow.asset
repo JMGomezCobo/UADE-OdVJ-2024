@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BrickData_Yellow
   m_EditorClassIdentifier: 
   pointValue: 300
-  hitsToDestroy: 3
+  hitsToDestroy: 6
   powerUpChance: 0.1
   powerUpPrefab: {fileID: 7710830910432241147, guid: 5e57695e992b91946a23ba40f5c01f2a, type: 3}

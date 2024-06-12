@@ -14,7 +14,7 @@ namespace Managers
         public UnityEvent onResume;
         
         private int _score;
-        private int _totalBricks;
+        public int _totalBricks;
         
         public static GameManager Instance;
 

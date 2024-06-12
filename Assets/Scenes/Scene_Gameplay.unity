@@ -253,6 +253,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerBall
       objectReference: {fileID: 0}
+    - target: {fileID: 5023203924155417988, guid: bb8c467b7b098fe4db5d493b6236fd07, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5692076769243526965, guid: bb8c467b7b098fe4db5d493b6236fd07, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6008136493185906362, guid: bb8c467b7b098fe4db5d493b6236fd07, type: 3}
       propertyPath: maxSpeed
       value: 6
@@ -5734,7 +5742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6981896450c22049848103b01a58989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 3
+  lives: 1
   onGameWin:
     m_PersistentCalls:
       m_Calls:
@@ -5795,6 +5803,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _totalBricks: 0
 --- !u!1001 &1750539674
 PrefabInstance:
   m_ObjectHideFlags: 0

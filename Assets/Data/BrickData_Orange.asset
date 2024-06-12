@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BrickData_Orange
   m_EditorClassIdentifier: 
   pointValue: 400
-  hitsToDestroy: 4
+  hitsToDestroy: 8
   powerUpChance: 0.1
   powerUpPrefab: {fileID: 7710830910432241147, guid: efeea8e34acf96340a077ca8e3e95fe8, type: 3}
