@@ -118,6 +118,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  baseDamage: 1
+  damageMultiplier: 1
+  hitPlayerClip: {fileID: 8300000, guid: fc0bd4e52a8a4734a80a740c4fd92bf7, type: 3}
+  hitBrickClip: {fileID: 8300000, guid: d7605f217c1a1fa48a57c689abc19ced, type: 3}
+  hitWallClip: {fileID: 8300000, guid: dc311f729e7ad8049a6041162a5931ab, type: 3}
 --- !u!1 &5419600230823238959
 GameObject:
   m_ObjectHideFlags: 0

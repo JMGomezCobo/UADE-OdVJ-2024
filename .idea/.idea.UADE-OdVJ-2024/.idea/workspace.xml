@@ -5,31 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee662335-c81c-4b91-86e6-2f237c258beb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Pickups.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Pickups/PickUp_DamageBoost.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Pickups/PickUp_DamageBoost.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Pickups/PickUp_Multiball.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Pickups/PickUp_Multiball.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Pickups/Pickup_ExtraLife.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Pickups/Pickup_ExtraLife.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DamagePowerUp.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DamagePowerUp.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Boing_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Boing_0.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Boing_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Boing_1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Boing_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Boing_2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_0.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_3.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_4.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_5.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_6.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_7.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_7.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_8.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_8.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_9.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Hit_9.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Win_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX_Win_0.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Track_Loop_Loaf.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Track_Loop_Loaf.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UADE-OdVJ-2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UADE-OdVJ-2024/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Cyan.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Cyan.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Green.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Green.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Orange.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Orange.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Red.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Red.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/BrickData_Yellow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BrickData_Yellow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Light.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Light.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pickup_ExtraLife.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pickup_ExtraLife.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PowerUp_Multiball.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PowerUp_Multiball.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MultiBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MultiBall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Gameplay.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BrickController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BrickController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiBallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Power Ups/MultiBallController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
