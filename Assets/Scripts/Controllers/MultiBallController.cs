@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MultiBallController : Ball
 {
-   private void OnCollisionEnter(Collision collision)
+    protected override void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("DeadZone"))
         {
@@ -17,6 +17,6 @@ public class MultiBallController : Ball
 
     public override void LaunchBall()
     {
-        Velocity = new Vector3(Random.Range(-1, 1f), 1, 0).normalized * speed;
+        _velocity = new Vector3(Random.Range(-1, 1f), 1, 0).normalized * speed;
     }
 }

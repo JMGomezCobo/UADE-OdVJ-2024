@@ -79,21 +79,21 @@ public class BallController : Ball
         var playerPosition = paddleController.transform.position;
 
         transform.position = new Vector3(playerPosition.x, playerPosition.y + 0.5f, 0);
-        Velocity = Vector3.zero;
+        _velocity = Vector3.zero;
     }
 
     public override void LaunchBall()
     {
-        Velocity = new Vector3(Random.Range(-1, 1f), 1, 0).normalized * speed;
+        _velocity = new Vector3(Random.Range(-1, 1f), 1, 0).normalized * speed;
     }
     
     private void IncreaseSpeed()
     {
-        Velocity *= speedMultiplier;
+        _velocity *= speedMultiplier;
         
-        if (Velocity.magnitude > maxSpeed)
+        if (_velocity.magnitude > maxSpeed)
         {
-            Velocity = Velocity.normalized * maxSpeed;
+            _velocity = _velocity.normalized * maxSpeed;
         }
     }
 }
