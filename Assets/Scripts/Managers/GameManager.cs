@@ -41,6 +41,7 @@ namespace Managers
             CustomUpdateManager.Instance.SubscribeToUpdate(PauseGame);
         }
 
+
         public void AddScore(int points)
         {
             _score += points;

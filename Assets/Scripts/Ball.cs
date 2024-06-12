@@ -21,6 +21,10 @@ public abstract class Ball : MonoBehaviour
 
     private void Start()
     {
+        //Acá tenemos un caso de CACHING
+        //ya que nos guardamos el resultaddo
+        //de la variable para utilizarla más adelante
+
         _audioSource = GetComponent<AudioSource>();
         
         InitializeBall();
